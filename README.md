@@ -14,7 +14,8 @@
 4. Review the results. Parse them and put them into a DataFrame.
 5. We can save the DataFrame as a csv in order to have easy access to the data from other locations.
 
-The more detailed process of getting Helsinki Data from the CityBikes API can be found in the city_bikes.ipynb document saved in the notebooks folder.
+The more detailed process of getting Helsinki Data from the CityBikes API can be found in the [city_bikes.ipynb document](/notebooks/city_bikes.ipynb) saved in the [notebooks folder](/notebooks/).
+
 ### Step 2: Get Point of Interest Data from Foursquare and Yelp.
 1. Review the [documentation page for Foursquare](https://docs.foursquare.com/developer/reference/place-search) and the [documentation page for Yelp](https://docs.developer.yelp.com/reference/v3_business_search). Note that both APIs have a code box that you can test code in. The pages are visually quite similar to each other in terms of the display, so it's important to be aware of which documentation is being reviewed. I chose to review the documentation in tandem to determine if it's possible to format a function that will work with both of these APIs. Due to the similar structures and requirements of the APIs, we can make a function that works well no matter if it's calling from Foursquare or Yelp.
 2. Ensure that the coordinates that will be iterated through are ready to access in the notebook.
@@ -28,7 +29,7 @@ The more detailed process of getting Helsinki Data from the CityBikes API can be
 10. Use the cleaned DataFrames to compare the completeness of the different API results.
 11. Get the top 10 restaurants according to rating.
 
-The more detailed process of getting Point of Interest data from the Foursquare API and the Yelp API and cleaning and comparing the results can be found in the yelp_foursquare_EDA.ipynb document saved in the notebooks folder.
+The more detailed process of getting Point of Interest data from the Foursquare API and the Yelp API and cleaning and comparing the results can be found in the [yelp_foursquare_EDA.ipynb document](/notebooks/yelp_foursquare_EDA.ipynb) saved in the [notebooks folder](/notebooks/).
 
 ### Step 3: Join Data from Step 1 and Step 2
 1. Load in both API data DataFrames.
@@ -48,7 +49,7 @@ The more detailed process of getting Point of Interest data from the Foursquare 
 15. Look at a visualization of the data and describe the pattern or relationship that it depicts.
 16. Put all the results into a database.
 
-The more detailed process of joining the cleaned data from the Foursquare API, the Yelp API, and the CityBikes API can be found in the joining_data.ipynb document saved in the notebooks folder.
+The more detailed process of joining the cleaned data from the Foursquare API, the Yelp API, and the CityBikes API can be found in the [joining_data.ipynb document](/notebooks/joining_data.ipynb) saved in the [notebooks folder](/notebooks/).
 
 ### Step 4: Build a Model based on the Data
 1. Remember the target. For this project the target is available bike spots.
@@ -59,8 +60,7 @@ The more detailed process of joining the cleaned data from the Foursquare API, t
 6. Review the model and interpret the results.
 7. Remove features if their p value is above the 0.05 threshold.
 
-The more detailed process of building a model based on the cleaned data from the Foursquare API, the Yelp API, and the CityBikes API can be found in the model_building.ipynb document saved in the notebooks folder.
-
+The more detailed process of building a model based on the cleaned data from the Foursquare API, the Yelp API, and the CityBikes API can be found in the [model_building.ipynb document](/notebooks/model_building.ipynb) saved in the [notebooks folder](/notebooks/).
 
 ## Results
 Yelp's data points all have ratings unlike Foursquare's. Yelp didn't have category data on every data point where Foursquare did. Ratings are harder to extrapolate than categories, so Yelp's data is more complete.
@@ -68,8 +68,8 @@ Yelp's data points all have ratings unlike Foursquare's. Yelp didn't have catego
 The model explains 0% of the data. The relationship between each feature (Rounded Latitude, Rounded Longitude, and Rating) and the number of free bikes is most likely from natural variation as opposed to a cause and effect relationship.
 
 
-The more detailed comparison of the Foursquare API and Yelp API coverage can be found in the 'Comparing Results' section of the yelp_foursquare_EDA.ipynb document saved in the notebooks folder.
-The more detailed interpretation of the model output can be found in the 'Provide model output and an interpretation of the results.' section of the model_building.ipynb document saved in the notebooks folder.
+The more detailed comparison of the Foursquare API and Yelp API coverage can be found in the 'Comparing Results' section of the [yelp_foursquare_EDA.ipynb document](/notebooks/yelp_foursquare_EDA.ipynb) saved in the [notebooks folder](/notebooks/).
+The more detailed interpretation of the model output can be found in the 'Provide model output and an interpretation of the results.' section of the [model_building.ipynb document](/notebooks/model_building.ipynb) saved in the [notebooks folder](/notebooks/).
 
 ## Challenges 
 When setting up the API calls there were lots of variables to consider. It was important to make sure each call would give the desired output. I was unsure of how to approach the calls and made the decision to build a function in order to standardize my process and reduce error. This did mean I had to be very specific in the variables I set up.
