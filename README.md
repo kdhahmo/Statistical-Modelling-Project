@@ -78,15 +78,13 @@ I also made some calls where my results were undesired. I changed my call functi
 
 When running tests I had mis-copied my Yelp API key and had to step back and restart my process from the beginning to even realize I was missing a chunk of the key.
 
-When deciding on what values to keep from the API calls I decided on some values that would be used for a classification model. I treated the cleaning and maintaining of these values as part of the project in order to not lose some data when dropping duplicates. 
+When deciding on what values to keep from the API calls I decided on some values that would be used for a classification model. I treated the cleaning and maintaining of these values as part of the project in order to not lose some data when dropping duplicates. I did however allocate a lot of attention to extra category cleaning when it was outside of the scope of the project.
 
 Cleaning data always brings the challenge of deciding how to handle null values. I decided to fill in null ratings with a 0. Null prices became a new category. 
  
-  
-
 ## Future Goals
 
-I would get the 'Category' and 'Price' columns ready by setting up a Multinoulli random vector. Using price as an example, there are 5 possible outcomes ['Not Listed', 'Most Affordable', 'Affordable', 'Expensive', 'Most Expensive']. Not Listed could be represented as [1,0,0,0,0], Most Affordable as [0,1,0,0,0] and so on. 1 represents the outcome that exists in the value. 
+I would get the 'Category' and 'Price' columns ready by making the values in them into separate columns and having 1 mean that data point has that value and 0 mean that row does not have that value. Using price as an example, there are 5 possible outcomes ['Not Listed', 'Most Affordable', 'Affordable', 'Expensive', 'Most Expensive']. A data point that has a Price value of 'Not Listed' would have 1 in 'Not Listed' column and 0 for the other 4 columns made from the Price values.
 
 When imputing nulls for the model used the overall average. If I had more time I would look into using methods like models to better fill in null ratings.
 
