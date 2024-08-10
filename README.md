@@ -69,6 +69,7 @@ The model explains 0% of the data. The relationship between each feature (Rounde
 
 
 The more detailed comparison of the Foursquare API and Yelp API coverage can be found in the 'Comparing Results' section of the [yelp_foursquare_EDA.ipynb document](/notebooks/yelp_foursquare_EDA.ipynb) saved in the [notebooks folder](/notebooks/).
+
 The more detailed interpretation of the model output can be found in the 'Provide model output and an interpretation of the results.' section of the [model_building.ipynb document](/notebooks/model_building.ipynb) saved in the [notebooks folder](/notebooks/).
 
 ## Challenges 
