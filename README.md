@@ -1,5 +1,19 @@
 # Final-Project-Statistical-Modelling-with-Python
 
+## Table of Contents
+
+[Project/Goals](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#projectgoals)
+
+[Process](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#process)
+
+[Results](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#results)
+
+[Challenges](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#challenges)
+
+[Future Goals](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#future-goals)
+
+[Revisiting the Project](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#revisiting-the-project)
+---
 ## Project/Goals
 - Get data from the CityBikes API, the Foursquare API, and the Yelp API
 - Combine the data from the different API results
@@ -61,7 +75,7 @@ The more detailed process of joining the cleaned data from the Foursquare API, t
 7. Remove features if their p value is above the 0.05 threshold.
 
 The more detailed process of building a model based on the cleaned data from the Foursquare API, the Yelp API, and the CityBikes API can be found in the [model_building.ipynb document](/notebooks/model_building.ipynb) saved in the [notebooks folder](/notebooks/).
-
+---
 ## Results
 Yelp's data points all have ratings unlike Foursquare's. Yelp didn't have category data on every data point where Foursquare did. Ratings are harder to extrapolate than categories, so Yelp's data is more complete.
 
@@ -71,7 +85,7 @@ The model explains 0% of the data. The relationship between each feature (Rounde
 The more detailed comparison of the Foursquare API and Yelp API coverage can be found in the 'Comparing Results' section of the [yelp_foursquare_EDA.ipynb document](/notebooks/yelp_foursquare_EDA.ipynb) saved in the [notebooks folder](/notebooks/).
 
 The more detailed interpretation of the model output can be found in the 'Provide model output and an interpretation of the results.' section of the [model_building.ipynb document](/notebooks/model_building.ipynb) saved in the [notebooks folder](/notebooks/).
-
+---
 ## Challenges 
 When setting up the API calls there were lots of variables to consider. It was important to make sure each call would give the desired output. I was unsure of how to approach the calls and made the decision to build a function in order to standardize my process and reduce error. This did mean I had to be very specific in the variables I set up.
 
@@ -82,7 +96,7 @@ When running tests I had mis-copied my Yelp API key and had to step back and res
 When deciding on what values to keep from the API calls I decided on some values that would be used for a classification model. I treated the cleaning and maintaining of these values as part of the project in order to not lose some data when dropping duplicates. I did however allocate a lot of attention to extra category cleaning when it was outside of the scope of the project.
 
 Cleaning data always brings the challenge of deciding how to handle null values. I decided to fill in null ratings with a 0. Null prices became a new category. 
- 
+--- 
 ## Future Goals
 
 I would get the 'Category' and 'Price' columns ready by making the values in them into separate columns and having 1 mean that data point has that value and 0 mean that row does not have that value. Using price as an example, there are 5 possible outcomes ['Not Listed', 'Most Affordable', 'Affordable', 'Expensive', 'Most Expensive']. A data point that has a Price value of 'Not Listed' would have 1 in 'Not Listed' column and 0 for the other 4 columns made from the Price values.
@@ -92,3 +106,7 @@ When imputing nulls for the model used the overall average. If I had more time I
 I wanted to set up my variables so things are more repeatable, but due to the outputs on APIs it's not as simple to make a one size fits all for call results. I looked into Object Oriented Programming and if I had more time I would try solutions using classes to perform some sort of templating. But given how API outputs can change, I would likely also end up spending time on mapping complete logic to account for changes, which may not be worth it.
 
 I would use the distance feature to make some sort of comparison of density in relation to a point based on its relative location (eg. further north having more POI of high rating close to it). I removed distance for this project in order to be able to remove duplicate points to not skew data. If I had more time I would decide on a way to work with the distances. It would likely be working with the same base data in a different DataFrame and grouping the data by name, coordinates, and distance.
+---
+## Revisiting the Project
+
+I wanted to change my approach to the EDA and cleaning process because of my initial handling of duplicated Points of Interest. The work in the [yelp_foursquare_EDA_altered_process notebook](notebooks/yelp_foursquare_EDA_altered_process.ipynb) is this change in process.
