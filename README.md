@@ -1,20 +1,5 @@
 # Final-Project-Statistical-Modelling-with-Python
 
-## Table of Contents
-
-[Project/Goals](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#projectgoals)
-
-[Process](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#process)
-
-[Results](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#results)
-
-[Challenges](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#challenges)
-
-[Future Goals](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#future-goals)
-
-[Revisiting the Project](https://github.com/kdhahmo/Statistical-Modelling-Project?tab=readme-ov-file#revisiting-the-project)
-
----
 ## Project/Goals
 - Get data from the CityBikes API, the Foursquare API, and the Yelp API
 - Combine the data from the different API results
@@ -114,4 +99,4 @@ I would use the distance feature to make some sort of comparison of density in r
 ---
 ## Revisiting the Project
 
-I wanted to change my approach to the EDA and cleaning process because of my initial handling of duplicated Points of Interest. The work in the [yelp_foursquare_EDA_altered_process notebook](notebooks/yelp_foursquare_EDA_altered_process.ipynb) is this change in process.
+I wanted to change my approach to the EDA and cleaning process because of my initial handling of duplicated Points of Interest. The work I am doing in the [yelp_foursquare_EDA_altered_process notebook](notebooks/yelp_foursquare_EDA_altered_process.ipynb) is this change in process.
