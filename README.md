@@ -100,5 +100,3 @@ I would use the distance feature to make some sort of comparison of density in r
 ## Revisiting the Project
 
 I wanted to change my approach to the EDA and cleaning process because of my initial handling of duplicated Points of Interest. The work I am doing in the [yelp_foursquare_EDA_altered_process notebook](notebooks/yelp_foursquare_EDA_altered_process.ipynb) is the start of this change in process.
-
-- 2025/7/31 accidentally commited before adding and ran into issues. May pull from source and re-do work to spend less time on work lost.
