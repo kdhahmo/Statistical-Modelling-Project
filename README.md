@@ -100,3 +100,13 @@ I would use the distance feature to make some sort of comparison of density in r
 ## Revisiting the Project
 
 I wanted to change my approach to the EDA and cleaning process because of my initial handling of duplicated Points of Interest. The work I am doing in the [yelp_foursquare_EDA_altered_process notebook](Revised-Approach/notebooks/yelp_foursquare_EDA_altered_process.ipynb) is the start of this change in process. The [model_building notebook](Revised-Approach/notebooks/model_building.ipynb) in the [Revised-Approach](Revised-Approach) folder contains my updated apprach to modelling.
+
+### Process
+
+#### Step 1 Update Foursquare and Yelp Point of Interest Data Processing
+1. Import the DataFrames created in [Step 2 of the project](#step-2-get-point-of-interest-data-from-foursquare-and-yelp).
+2. Adjust the data: 
+    - Remove values that are a further distance than the expected radius of 1000m. 
+    - Get the count of unique Bike Spots per Point of Interest. 
+3. Interpret the data from the given API:
+    - plot the frequency of Bike Spots near Points of Interest.
