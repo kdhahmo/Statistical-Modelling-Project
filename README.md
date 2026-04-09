@@ -109,4 +109,13 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
     - Remove values that are a further distance than the expected radius of 1000m. 
     - Get the count of unique Bike Spots per Point of Interest. 
 3. Interpret the data from the given API:
-    - plot the frequency of Bike Spots near Points of Interest.
+    - Plot the frequency of Bike Spots near Points of Interest.
+4. Identify and work with the data for duplicate Points of Interest:
+    - Identify differeing featues:
+        - Popularity, Price, Rating
+    - Get the mean, minimum, and maximum for features of a Point of Interest:
+        - Popularity, Distance
+    - Visualize to see how the values differ:
+        - Popularity, Distance
+5. Use the API documentation to change the values in features to be more descriptive of their meaning:
+    - Price
