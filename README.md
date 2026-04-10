@@ -119,3 +119,9 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
         - Popularity, Distance
 5. Use the API documentation to change the values in features to be more descriptive of their meaning:
     - Price
+6. Change null values to descriptive values:
+    - Rating
+7. Combine the data from the API call with the calculated data:
+    - distance
+    - Bike Spots near
+    - popularity
