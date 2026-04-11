@@ -104,7 +104,7 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
 ### Process
 
 #### Step 1 Update Foursquare and Yelp Point of Interest Data Processing
-1. Import the DataFrames created in [Step 2 of the project](#step-2-get-point-of-interest-data-from-foursquare-and-yelp).
+1. Import the API data from [Step 2 of the project](#step-2-get-point-of-interest-data-from-foursquare-and-yelp).
 2. Adjust the data: 
     - Remove values that are a further distance than the expected radius of 1000m. 
     - Get the count of unique Bike Spots per Point of Interest. 
@@ -125,3 +125,10 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
     - distance
     - Bike Spots near
     - popularity
+8. Remove features with insufficient entries:
+    - Description
+9. Remove true duplicate Points of Interest.
+10. Save this cleaned DataFrame.
+11. Identify all values where the same string has different casing or white space:
+    - Name
+    - Category Name
