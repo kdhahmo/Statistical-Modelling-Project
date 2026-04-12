@@ -112,7 +112,9 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
     - Plot the frequency of Bike Spots near Points of Interest.
 4. Identify and work with the data for duplicate Points of Interest:
     - Identify differeing featues:
-        - Popularity, Price, Rating
+        - Popularity
+        - Price
+        - Rating
     - Get the mean, minimum, and maximum for features of a Point of Interest:
         - Popularity, Distance
     - Visualize to see how the values differ:
