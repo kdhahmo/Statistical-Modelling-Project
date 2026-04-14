@@ -135,3 +135,10 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
 11. Identify all values where the same string has different casing or white space:
     - Name
     - Category Name
+12. Compare the data between APIs:
+    - total data points
+    - total nulls
+    - % of data that are nulls
+    - features available
+    - null locations
+    
