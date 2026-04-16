@@ -144,5 +144,11 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
 13. Continue cleaning up the data that will be used:
     - compare counts of a specific Category Alias against counts of Category Alias and Category Title combination
     - handle the Name values with differing syntax
+        - identify name values with differeing syntax using a function
+        - research to find the official name
+        - ensure all values of the name are the official name
+    - handle the null values of Category columns
+        - identify data points with null categories
+        - compare the categories of Points of Interest with names containing any similar words
         
     
