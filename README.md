@@ -153,10 +153,15 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
         - use the API documentation
         - change similar categories into one category for clarity
     - handle when a Point of Interest has different category values:
-        - identify when a Point of Interest has different category values
-        - get counts for each category
-        - get counts for each Point of Interest category combination
-        - get the category values that occurs the most per name value
-        - identify unique combinations of Name and Category Title
-        - get the category values that occurs the most per name value
-        - pull from the larger dataset if there is still a tie
+        - try different filters:
+            - identify when a Point of Interest has different category values
+            - get counts for each category
+            - get counts for each Point of Interest category combination
+            - get the category values that occurs the most per name value
+            - identify unique combinations of Name and Category Title
+            - get the category values that occurs the most per name value
+            - pull from the larger dataset if there is still a tie
+        - clean the category information in the dataset:
+            - select the combinations of Name and Category Title that occur the most
+            - identify null values
+            - remove columns that are no longer needed
