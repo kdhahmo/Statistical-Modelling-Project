@@ -165,3 +165,6 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
             - select the combinations of Name and Category Title that occur the most
             - identify null values
             - remove columns that are no longer needed
+            - add coordinates to 3 decimal places
+            - add distance values to 3 decimal places
+            - save this cleaned DataFrame.
