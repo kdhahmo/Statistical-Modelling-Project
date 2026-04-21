@@ -168,3 +168,8 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
             - add coordinates to 3 decimal places
             - add distance values to 3 decimal places
             - save this cleaned DataFrame.
+
+The more detailed data processing process can be found in the [yelp_foursquare_EDA_altered_process notebook](Revised-Approach/notebooks/yelp_foursquare_EDA_altered_process.ipynb) saved in the [Revised Approach notebooks folder](Revised-Approach/notebooks/).
+
+#### Step 2 Update Approach to modelling
+1. Load in the final cleaned DataFrame from the [yelp_foursquare_EDA_altered_process notebook](Revised-Approach/notebooks/yelp_foursquare_EDA_altered_process.ipynb).
