@@ -173,3 +173,13 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
 
 #### Step 2 Update Approach to modelling
 1. Load in the final cleaned DataFrame from the [yelp_foursquare_EDA_altered_process notebook](Revised-Approach/notebooks/yelp_foursquare_EDA_altered_process.ipynb).
+2. Build a regression model.
+    - Remember the target. For this project the target is available bike spots.
+    - Choose the features for the initial model. I used Rounded Latitude, Rounded Longitude, Rating Distance, and Rounded Distance_mean.
+    - Check for correlation between features. High correlation can skew the model.
+        - I added a function to allow streamlined code use for another model.
+        
+    - Add a constant.
+    - Make the model.
+    - Review the model and interpret the results.
+    - Remove features if their p value is above the 0.05 threshold.
