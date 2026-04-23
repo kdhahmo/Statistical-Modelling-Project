@@ -178,8 +178,12 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
     - Choose the features for the initial model. I used Rounded Latitude, Rounded Longitude, Rating Distance, and Rounded Distance_mean.
     - Check for correlation between features. High correlation can skew the model.
         - I added a function to allow streamlined code use for another model.
-        
-    - Add a constant.
-    - Make the model.
+    - Make a function for the model:
+        - Calculations for the model's explanation of the data and errors.
+        - Linear Regression specific calculations.
+        - Built-in OLS Regression Results.
+        - Graph displaying model calculations.
     - Review the model and interpret the results.
     - Remove features if their p value is above the 0.05 threshold.
+
+
