@@ -183,7 +183,11 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
         - Linear Regression specific calculations.
         - Built-in OLS Regression Results.
         - Graph displaying model calculations.
-    - Review the model and interpret the results.
+    - Review the model and interpret the results given by the model function.
+    - Compare the distribution of target values from training to testing.
+    - Save the model's calculations to the list of model dictionaries.
     - Remove features if their p value is above the 0.05 threshold.
+        - Adjust 1 feature at a time.
+    - Once the models have been iterated through, save the list of model dictionaries containing all OLS model results.
 
 
