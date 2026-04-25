@@ -189,5 +189,8 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
     - Remove features if their p value is above the 0.05 threshold.
         - Adjust 1 feature at a time.
     - Once the models have been iterated through, save the list of model dictionaries containing all OLS model results.
-
-
+    - Compare OLS model results.
+3. Build a model using categorical features.
+    - Remember the target. For this project the target is available bike spots.
+    - Choose the features for the initial model. I used all available features from the cleaned DataFrame; Name, Latitude, Longitude, Distance, Price, Rating, Distance mean, Distance min, Distance max, Category, Rounded Latitude, Rounded Longitude, Rounded Distance, and Rounded Distance mean.
+    - Check for correlation between features. High correlation can skew the model.
