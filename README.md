@@ -116,7 +116,8 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
         - Price
         - Rating
     - Get the mean, minimum, and maximum for features of a Point of Interest:
-        - Popularity, Distance
+        - Popularity
+        - Distance
     - Visualize to see how the values differ:
         - Popularity
         - Distance
@@ -194,3 +195,5 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
     - Remember the target. For this project the target is available bike spots.
     - Choose the features for the initial model. I used all available features from the cleaned DataFrame; Name, Latitude, Longitude, Distance, Price, Rating, Distance mean, Distance min, Distance max, Category, Rounded Latitude, Rounded Longitude, Rounded Distance, and Rounded Distance mean.
     - Check for correlation between features. High correlation can skew the model.
+        - Encode the features with categorical values so they can be used in correlation checking.
+    
