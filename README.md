@@ -196,4 +196,11 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
     - Choose the features for the initial model. I used all available features from the cleaned DataFrame; Name, Latitude, Longitude, Distance, Price, Rating, Distance mean, Distance min, Distance max, Category, Rounded Latitude, Rounded Longitude, Rounded Distance, and Rounded Distance mean.
     - Check for correlation between features. High correlation can skew the model.
         - Encode the features with categorical values so they can be used in correlation checking.
-    
+    - Prepare the data for use in the model:
+        - Initial model using only categorical features.
+    - Make a function for the model:
+        - Graph comparing the distribution of target data between the training and testing datasets.
+        - Graphs displaying the model's predictions compared to the actual dataset values.
+        - Calculations for the model's explanation of the data and errors.
+        - Graph comparing the model's errors between the training and testing datasets.
+        - Graph showing the importance of model features.
