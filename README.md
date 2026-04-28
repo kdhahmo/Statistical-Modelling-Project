@@ -198,9 +198,14 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
         - Encode the features with categorical values so they can be used in correlation checking.
     - Prepare the data for use in the model:
         - Initial model using only categorical features.
-    - Make a function for the model:
+            - Iterate through; remove the least important feature until there is a model with only 2 features.
+        - Run a model with all available features.
+            - Iterate through; remove the least important highly correlated feature(s) until there is a model with no highly correlated features.
         - Graph comparing the distribution of target data between the training and testing datasets.
         - Graphs displaying the model's predictions compared to the actual dataset values.
         - Calculations for the model's explanation of the data and errors.
         - Graph comparing the model's errors between the training and testing datasets.
         - Graph showing the importance of model features.
+        - Text showing the importance of model features.
+        - Text showing the results of an automatic process to remove the least important of a pair of highly correlated features.
+    - Review the model and interpret the results given by the model function.
