@@ -201,6 +201,7 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
             - Iterate through; remove the least important feature until there is a model with only 2 features.
         - Run a model with all available features.
             - Iterate through; remove the least important highly correlated feature(s) until there is a model with no highly correlated features.
+    - Make a function for the model:
         - Graph comparing the distribution of target data between the training and testing datasets.
         - Graphs displaying the model's predictions compared to the actual dataset values.
         - Calculations for the model's explanation of the data and errors.
@@ -209,3 +210,10 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
         - Text showing the importance of model features.
         - Text showing the results of an automatic process to remove the least important of a pair of highly correlated features.
     - Review the model and interpret the results given by the model function.
+    - Save the model's calculations to the list of model dictionaries.
+4. Further review of model results.
+    - Graph comparing the models' explanation of the data and errors.
+        - OLS models.
+        - All models.
+        - XGBoost models.
+        - only the XGBoost models made considering all features.
