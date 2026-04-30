@@ -137,38 +137,38 @@ I wanted to change my approach to the EDA and cleaning process because of my ini
     - Name
     - Category Name
 12. Compare the data between APIs to decide on what data to use:
-    - total data points
-    - total nulls
+    - Total data points
+    - Total nulls
     - % of data that are nulls
-    - features available
-    - null locations
+    - Features available
+    - Null locations
 13. Continue cleaning up the data that will be used:
-    - compare counts of a specific Category Alias against counts of Category Alias and Category Title combination.
-    - handle the Name values with differing syntax:
-        - identify name values with differeing syntax using a function
-        - research to find the official name
-        - ensure all values of the name are the official name
-    - handle the null values of Category columns:
-        - identify data points with null categories
-        - compare the categories of Points of Interest with names containing any similar words
-        - use the API documentation
-        - change similar categories into one category for clarity
-    - handle when a Point of Interest has different category values:
-        - try different filters:
-            - identify when a Point of Interest has different category values
-            - get counts for each category
-            - get counts for each Point of Interest category combination
-            - get the category values that occurs the most per name value
-            - identify unique combinations of Name and Category Title
-            - get the category values that occurs the most per name value
-            - pull from the larger dataset if there is still a tie
-        - clean the category information in the dataset:
-            - select the combinations of Name and Category Title that occur the most
-            - identify null values
-            - remove columns that are no longer needed
-            - add coordinates to 3 decimal places
-            - add distance values to 3 decimal places
-            - save this cleaned DataFrame.
+    - Compare counts of a specific Category Alias against counts of Category Alias and Category Title combination.
+    - Handle the Name values with differing syntax:
+        - Identify name values with differeing syntax using a function
+        - Research to find the official name
+        - Ensure all values of the name are the official name
+    - Handle the null values of Category columns:
+        - Identify data points with null categories
+        - Compare the categories of Points of Interest with names containing any similar words
+        - Use the API documentation
+        - Change similar categories into one category for clarity
+    - Handle when a Point of Interest has different category values:
+        - Try different filters:
+            - Identify when a Point of Interest has different category values
+            - Get counts for each category
+            - Get counts for each Point of Interest category combination
+            - Get the category values that occurs the most per name value
+            - Identify unique combinations of Name and Category Title
+            - Get the category values that occurs the most per name value
+            - Pull from the larger dataset if there is still a tie
+        - Clean the category information in the dataset:
+            - Select the combinations of Name and Category Title that occur the most
+            - Identify null values
+            - Remove columns that are no longer needed
+            - Add coordinates to 3 decimal places
+            - Add distance values to 3 decimal places
+            - Save this cleaned DataFrame.
 
 The more detailed data processing process can be found in the [yelp_foursquare_EDA_altered_process notebook](Revised-Approach/notebooks/yelp_foursquare_EDA_altered_process.ipynb) saved in the [Revised Approach notebooks folder](Revised-Approach/notebooks/).
 
@@ -216,4 +216,4 @@ The more detailed data processing process can be found in the [yelp_foursquare_E
         - OLS models.
         - All models.
         - XGBoost models.
-        - only the XGBoost models made considering all features.
+        - Only the XGBoost models made considering all features.
